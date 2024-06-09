@@ -1,0 +1,127 @@
+# Xcode
+.DS_Store
+build/
+DerivedData/
+.idea/
+*.xcuserdatad
+*.xcscmblueprint
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/xcschemes/*.xcscheme
+!*.xcworkspace/contents.xcworkspacedata
+!*.xcworkspace/xcshareddata/*.xcuserstate
+
+# Swift Package Manager
+.swiftpm
+Package.resolved
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Carthage
+Carthage/Build/
+
+# Accio dependency management
+Dependencies/
+.accio/
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# Code Injection by AppCode
+.idea/
+
+# AppCode
+.idea/workspace.xml
+.idea/description.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/dictionaries
+.idea/libraries
+.idea/vcs.xml
+.idea/tasks.xml
+.idea/scopes
+.idea/jarRepositories.xml
+.idea/artifacts
+.idea/encodings.xml
+.idea/workspace
+.idea/runConfigurations
+.idea/project
+.idea/dataSources
+
+# Archives
+*.xcarchive
+
+# App Center
+appcenter-pre-build.sh
+appcenter-post-clone.sh
+appcenter-post-build.sh
+appcenter-pre-build.log
+appcenter-post-clone.log
+appcenter-post-build.log
+
+# Provisioning profiles
+*.mobileprovision
+*.provisionprofile
+
+# Various settings
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+
+# App-specific
+*.moved-aside
+*.xcuserstate
+*.xcdebugger
+
+# Rules to ensure shared schemes are included
+*.xcodeproj/xcshareddata/xcschemes/xcschememanagement.plist
+*.xcworkspace/xcshareddata/xcschemes/xcschememanagement.plist
+
+# Obj-C/Swift specific
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Xcode environment settings
+.env.local
+.env.*
+.swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
+.swiftpm/xcode/package.xcworkspace/xcshareddata/*
+
+# Xcode generated files
+*.xcfilelist
+*.xcactivitylog
+
+# Other generated files
+*.storyboardc
+*.ib
+*.swiftdoc
+*.swiftsourceinfo
+*.swiftsourceinfo.xcuserdata
+
+# Index files
+*.index
+*.index-v3
+
+# Build generated files
+*.app
+*.appiconset
+*.appdSYM
+*.appiconset
+*.crashpoint
+*.crashpoint.zip
+*.generated.swift
+
+# Swift Build output
+.build
+

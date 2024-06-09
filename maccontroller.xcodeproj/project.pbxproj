@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		362659A08D191DF5C81D9D11 /* Pods_maccontroller.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F81F6EB62564453C72AEC29F /* Pods_maccontroller.framework */; };
+		C3703BFD2C14BA6A00E27B3F /* CredentialsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3703BFC2C14BA6A00E27B3F /* CredentialsView.swift */; };
 		C3F239142C14B02100B385EF /* maccontrollerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F239132C14B02100B385EF /* maccontrollerApp.swift */; };
 		C3F239162C14B02100B385EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F239152C14B02100B385EF /* ContentView.swift */; };
 		C3F239182C14B02200B385EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3F239172C14B02200B385EF /* Assets.xcassets */; };
 		C3F2391B2C14B02200B385EF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3F2391A2C14B02200B385EF /* Preview Assets.xcassets */; };
+		C3F239222C14B06C00B385EF /* SSHManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F239212C14B06C00B385EF /* SSHManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A652F185FEBA82C178EF869 /* Pods-maccontroller.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maccontroller.release.xcconfig"; path = "Target Support Files/Pods-maccontroller/Pods-maccontroller.release.xcconfig"; sourceTree = "<group>"; };
+		C3703BFC2C14BA6A00E27B3F /* CredentialsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsView.swift; sourceTree = "<group>"; };
+		C3703BFE2C14C05700E27B3F /* maccontroller.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = maccontroller.entitlements; sourceTree = "<group>"; };
+		C3703BFF2C14C06F00E27B3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C3F239102C14B02100B385EF /* maccontroller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = maccontroller.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3F239132C14B02100B385EF /* maccontrollerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = maccontrollerApp.swift; sourceTree = "<group>"; };
 		C3F239152C14B02100B385EF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C3F239172C14B02200B385EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3F2391A2C14B02200B385EF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C3F239212C14B06C00B385EF /* SSHManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSHManager.swift; sourceTree = "<group>"; };
+		E93E92BE3602B9692F071533 /* Pods-maccontroller.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maccontroller.debug.xcconfig"; path = "Target Support Files/Pods-maccontroller/Pods-maccontroller.debug.xcconfig"; sourceTree = "<group>"; };
+		F81F6EB62564453C72AEC29F /* Pods_maccontroller.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_maccontroller.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +36,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				362659A08D191DF5C81D9D11 /* Pods_maccontroller.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25A2C4ACB63D632064D0F3D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E93E92BE3602B9692F071533 /* Pods-maccontroller.debug.xcconfig */,
+				1A652F185FEBA82C178EF869 /* Pods-maccontroller.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C3F239072C14B02100B385EF = {
 			isa = PBXGroup;
 			children = (
 				C3F239122C14B02100B385EF /* maccontroller */,
 				C3F239112C14B02100B385EF /* Products */,
+				25A2C4ACB63D632064D0F3D3 /* Pods */,
+				FBB6C20DCB7B4DA1E392CD9E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,10 +73,14 @@
 		C3F239122C14B02100B385EF /* maccontroller */ = {
 			isa = PBXGroup;
 			children = (
+				C3703BFF2C14C06F00E27B3F /* Info.plist */,
+				C3703BFE2C14C05700E27B3F /* maccontroller.entitlements */,
 				C3F239132C14B02100B385EF /* maccontrollerApp.swift */,
 				C3F239152C14B02100B385EF /* ContentView.swift */,
 				C3F239172C14B02200B385EF /* Assets.xcassets */,
 				C3F239192C14B02200B385EF /* Preview Content */,
+				C3F239212C14B06C00B385EF /* SSHManager.swift */,
+				C3703BFC2C14BA6A00E27B3F /* CredentialsView.swift */,
 			);
 			path = maccontroller;
 			sourceTree = "<group>";
@@ -67,6 +93,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		FBB6C20DCB7B4DA1E392CD9E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F81F6EB62564453C72AEC29F /* Pods_maccontroller.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +108,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C3F2391E2C14B02200B385EF /* Build configuration list for PBXNativeTarget "maccontroller" */;
 			buildPhases = (
+				00877ABCEE824DBF97D7466B /* [CP] Check Pods Manifest.lock */,
 				C3F2390C2C14B02100B385EF /* Sources */,
 				C3F2390D2C14B02100B385EF /* Frameworks */,
 				C3F2390E2C14B02100B385EF /* Resources */,
+				2E3B6BF0407138D5552F1679 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,13 +168,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		00877ABCEE824DBF97D7466B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-maccontroller-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E3B6BF0407138D5552F1679 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-maccontroller/Pods-maccontroller-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-maccontroller/Pods-maccontroller-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-maccontroller/Pods-maccontroller-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C3F2390C2C14B02100B385EF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C3F239162C14B02100B385EF /* ContentView.swift in Sources */,
+				C3703BFD2C14BA6A00E27B3F /* CredentialsView.swift in Sources */,
 				C3F239142C14B02100B385EF /* maccontrollerApp.swift in Sources */,
+				C3F239222C14B06C00B385EF /* SSHManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,15 +346,19 @@
 		};
 		C3F2391F2C14B02200B385EF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E93E92BE3602B9692F071533 /* Pods-maccontroller.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = maccontroller/maccontroller.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"maccontroller/Preview Content\"";
 				DEVELOPMENT_TEAM = L9GAY2VTPZ;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = maccontroller/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -295,15 +379,19 @@
 		};
 		C3F239202C14B02200B385EF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A652F185FEBA82C178EF869 /* Pods-maccontroller.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = maccontroller/maccontroller.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"maccontroller/Preview Content\"";
 				DEVELOPMENT_TEAM = L9GAY2VTPZ;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = maccontroller/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
