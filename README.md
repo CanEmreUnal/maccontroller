@@ -1,7 +1,7 @@
 
 # MyMacRemoteController
 
-MyMacRemoteController is a macOS application that allows you to control your Mac's volume and put it to sleep remotely via SSH.
+MyMacRemoteController is a iOS application that allows you to control your Mac's volume and put it to sleep remotely via SSH.
 
 ## Features
 
@@ -11,7 +11,7 @@ MyMacRemoteController is a macOS application that allows you to control your Mac
 
 ## Requirements
 
-- macOS 10.15 or later
+- iOS 15 or later
 - Xcode 12.0 or later
 - Swift 5.3 or later
 
